@@ -101,12 +101,12 @@
         left: 0;
         right: 0;
         padding: 1rem;
-        background-color: #111; /* fond sombre uni */
+        background-color: #111;
         color: white;
         font-size: 0.95rem;
         text-align: center;
-        opacity: 1; /* toujours visible */
-        transition: none; /* aucune animation */
+        opacity: 1;
+        transition: none;
       }
       .image-wrapper {
         position: relative;
@@ -116,14 +116,23 @@
         background: black;
       }
       .preview {
-        pointer-events: none; /* désactive les clics dans l'iframe */
+        pointer-events: none;
+      }
+      .custom-link {
+        color: rgb(200, 255, 0);
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <header>
       <h1>Portfolio Rim</h1>
-      <p>my developer's portfolio</p>
+      <p>
+        my developer's portfolio
+        <a class="custom-link" href="https://github.com/itsrim"
+          >https://github.com/itsrim</a
+        >
+      </p>
     </header>
 
     <section class="grid">
